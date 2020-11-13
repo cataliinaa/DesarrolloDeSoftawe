@@ -29,7 +29,9 @@ Registro
             <input name="password" class="form-control" type="password"/>
             <div class="bg-danger mt-1">{{ form.errors.password }}</div>
         </div>
-
+        <a href="{% url 'password_reset' %}" class="btn btn-link">Forgot your password?</a>
+        <a href="{% url 'Registrar' %}" class="btn btn-link">Registrarse
+        </a>
         {% if form.non_field_errors %}
         <div class="form-group">
             <div class="bg-danger mt-1 p-2">Login incorrecto!</div>

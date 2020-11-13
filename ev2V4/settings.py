@@ -130,3 +130,11 @@ STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'static',
 LOGIN_REDIRECT_URL = 'homeUsuario'
 
 LOGOUT_REDIRECT_URL = 'homeUsuario'
+
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'django2020duoc@gmail.com'
+EMAIL_HOST_PASSWORD = '123duoc123'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
