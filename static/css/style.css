@@ -41,7 +41,10 @@ body {
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem 0 rgb(255, 233, 233);
 }
-
+.navbar-brand img{
+    height: 30%;
+    width:25%;
+}
 .content-center {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 10px;
