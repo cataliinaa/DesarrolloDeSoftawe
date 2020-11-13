@@ -1,5 +1,5 @@
 #navbar {
-    background-color: rgb(245, 223, 223);
+    background-color: rgb(3, 0, 0);
     padding: 1em 1em;
     display: flex;
     align-content: center;
@@ -13,7 +13,9 @@
     display: inline-block;
     transition-duration: 0.2s;
 }
-
+#footer{
+    background-color: rgb(3, 0, 0);
+}
 #navbar li a {
     text-decoration: none;
     text-align: center;
@@ -21,10 +23,10 @@
     padding: 8px;
     margin: 3px 3px;
     display: inline-block;
-    text-shadow: 1px 1px 2px grey;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
-root {
+.root {
     --input-padding-x: 1.5rem;
     --input-padding-y: .75rem;
 }
@@ -37,7 +39,7 @@ body {
 .card-signin {
     border: 0;
     border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem 0 rgb(255, 233, 233);
 }
 
 .content-center {
@@ -50,6 +52,9 @@ body {
 }
 .img_fondo{
     width: 100%;
+}
+#h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /*----------------------------------*/
 
