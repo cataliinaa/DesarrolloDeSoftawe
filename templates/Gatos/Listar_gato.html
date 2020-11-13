@@ -25,7 +25,8 @@
             <td>{{ c.edad}}</td>
             <td>${{ c.fecha_encontrado }}</td>
             <td>${{ c.raza }}</td>
-
+            
+        
             <td><a class="btn btn-primary" href="{% url 'Editar_gato' c.id %}">Editar</a></td>
             <td><a class="btn btn-danger" href="{% url 'Eliminar_gato' c.id %}">Eliminar</a></td>
         </tr>

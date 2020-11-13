@@ -14,11 +14,10 @@
     {% block navbar %}
     <nav class="navbar " id="navbar">
         <div id="nav">
-            <ul>    
+            <ul>
                 <a class="navbar-brand" href="{% url 'homeUsuario' %}"><img src="static/img/fotos_gatos/logo.png" id="logo" alt="">Santuario Gatuno
                 <li class="nav-item"><a href="{% url 'homeUsuario' %}">inicio</a></li>
-                <li class="nav-item"><a href="{% url 'Listar_gato2/' %}">Ver gatos en adopcion</a></li>
-                <li class="nav-item"><a href="{% url 'Buscar_gatos/' %}">Buscar gatos</a></li>
+
                 {% if not user.is_authenticated %}
                 <li class="nav-item"><a href="{% url 'Registrar' %}">registrarse</a></li>
                 <li class="nav-item"><a href="{% url 'login' %}">iniciar sesión</a></li>
@@ -26,13 +25,14 @@
                     </a></li>
                 {% endif %}
                 {% if user.is_superuser %}
-
-
+                <li class="nav-item"><a href="{% url 'Buscar_gatos/' %}">Buscar gatos</a></li>
                 <li class="nav-item"><a href="{% url 'List_user' %}">Ver Usuarios registrados</a></li>
                 <li class="nav-item"><a href="{% url 'Listar_gato/' %}">Editar gatos en adopcion</a></li>
                 <li class="nav-item"><a href="{% url 'Añadir_gato' %}">Añadir gato en adopcion</a></li>
                 {% endif %}
                 {% if user.is_authenticated %}
+                <li class="nav-item"><a href="{% url 'Listar_gato2/' %}">Ver gatos en adopcion</a></li>
+                <li class="nav-item"><a href="{% url 'Buscar_gatos/' %}">Buscar gatos</a></li>
                 <li class="nav-item"><a href="{% url 'password_change' %}">cambiar contraseña</a></li>
                 <li class="nav-item"><a href="{% url 'logout' %}">Cerrar sesión</a></li>
                 <span class="ml-md-5" "><strong>Usuario: {{ user.get_username }}</strong></span>
